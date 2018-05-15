@@ -1,3 +1,5 @@
+/*MSSQL*/
+
 DECLARE @sql VARCHAR(MAX), @dbName VARCHAR(MAX)
 
 DECLARE dbNameCursor CURSOR for
