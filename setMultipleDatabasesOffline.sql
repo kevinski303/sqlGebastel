@@ -1,10 +1,12 @@
-DECLARE @sql VARCHAR(MAX), @dbName VARCHAR(25)
+DECLARE @sql VARCHAR(MAX), @dbName VARCHAR(MAX)
 
 DECLARE dbNameCursor CURSOR for
 	SELECT name from sys.databases WHERE name in (
-		'testDB1',
-		'testDB2',
-		'testDB3'
+		'database1',
+		'database2',
+		'database3',
+		'database4',
+		'database5'
 	);
 
 OPEN dbNameCursor
